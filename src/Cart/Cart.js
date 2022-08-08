@@ -22,7 +22,8 @@ function Cart() {
             {/* ---------------------------------------------------------- */}
 
            <div className="order_details">
-           {basket.map(item => (
+
+           {<h1>Cart is empty</h1> && basket.map(item => (
                         <Checkout 
                             id = {item.id}
                             name = {item.name}
